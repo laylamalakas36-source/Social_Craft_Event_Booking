@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Social Craft Event Booking</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+
+<body>
+
+
+<header>
+
+  <nav class="nav">
+
+    <div class="brand">
+      Social<span>Craft</span>
+    </div>
+
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Toggle menu"
+    >
+      ☰
+    </button>
+
+
+    <div
+      class="nav-links"
+      id="navLinks"
+    >
+
+      <a href="#events">
+        Events
+      </a>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#booking">
+        Book
+      </a>
+
+      <a href="my-booking.html">
+        My Booking
+      </a>
+
+    </div>
+
+
+    <div class="nav-actions">
+
+      <a
+        class="btn ghost"
+        href="my-booking.html"
+      >
+        My Booking
+      </a>
+
+      <button
+        class="btn logout-btn"
+        id="logoutBtn"
+        type="button"
+      >
+        Logout
+      </button>
+
+    </div>
+
+  </nav>
+
+</header>
+
+
+
+<main>
+
+
+  <!-- HERO -->
+
+  <div class="hero">
+
+    <div>
+
+      <h1>
+        Make memories,
+        <em>make art</em>,
+        make friends.
+      </h1>
+
+
+      <p>
+        Paint &amp; sip, pottery, board games,
+        mixology and more — book your seat
+        in seconds. Real workshops, in
+        Santa Cruz, Laguna.
+      </p>
+
+
+      <div class="hero-actions">
+
+       
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-img">
+
+      <img
+        src="images/hero.jpg"
+        alt="Craft workshop table"
+        onerror="this.style.display='none'"
+      >
+
+    </div>
+
+  </div>
+
+
+
+  <!-- EVENTS -->
+
+  <section id="events">
+
+    <div class="section-head">
+
+      <h2>
+        Upcoming workshops
+      </h2>
+
+      <p>
+        Pick an event, choose your date,
+        and reserve.
+      </p>
+
+    </div>
+
+
+    <div
+      class="grid"
+      id="eventGrid"
+    ></div>
+
+  </section>
+
+
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <div class="about">
+
+      <div>
+
+        <blockquote>
+          "Make memories, make art,
+          make friends."
+        </blockquote>
+
+
+        <p class="detail">
+
+          We host small, friendly craft
+          sessions where you learn something
+          new and leave with something you
+          made yourself.
+
+          No experience needed —
+          just show up curious.
+
+        </p>
+
+      </div>
+
+
+      <dl>
+
+        <div>
+
+          <dt>
+            Organizer
+          </dt>
+
+          <dd>
+            Stitch &amp; Spill
+          </dd>
+
+        </div>
+
+
+        <div>
+
+          <dt>
+            Location
+          </dt>
+
+          <dd>
+            Santa Cruz, Laguna, Philippines
+          </dd>
+
+        </div>
+
+
+        <div>
+
+          <dt>
+            Contact
+          </dt>
+
+          <dd>
+
+            socialcrafteventbooking@event.com
+            <br>
+
+            +63 917-123-4567
+
+          </dd>
+
+        </div>
+
+      </dl>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- BOOKING -->
+
+  <section id="booking">
+
+    <div class="section-head">
+
+      <h2>
+        Reserve your seat
+      </h2>
+
+      <p>
+        Fill this in and you're in.
+      </p>
+
+    </div>
+
+
+    <form
+      class="form-wrap"
+      id="bookingForm"
+      novalidate
+    >
+
+
+      <div
+        class="field"
+        id="f-event"
+      >
+
+        <label for="eventSelect">
+          Event
+        </label>
+
+        <select
+          id="eventSelect"
+          name="event"
+        >
+
+          <option value="">
+            Select an event…
+          </option>
+
+        </select>
+
+
+        <div class="error">
+          Please choose an event.
+        </div>
+
+      </div>
+
+
+
+      <div class="row">
+
+
+        <div
+          class="field"
+          id="f-date"
+        >
+
+          <label for="dateInput">
+            Date
+          </label>
+
+          <input
+            type="date"
+            id="dateInput"
+            name="date"
+          >
+
+          <div class="error">
+            Please pick a date.
+          </div>
+
+        </div>
+
+
+
+        <div
+          class="field"
+          id="f-time"
+        >
+
+          <label for="timeSelect">
+            Time slot
+          </label>
+
+          <select
+            id="timeSelect"
+            name="time"
+          >
+
+            <option value="">
+              Select a time…
+            </option>
+
+            <option>
+              10:00 AM
+            </option>
+
+            <option>
+              2:00 PM
+            </option>
+
+            <option>
+              6:30 PM
+            </option>
+
+          </select>
+
+
+          <div class="error">
+            Please pick a time slot.
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="row">
+
+
+        <div
+          class="field"
+          id="f-name"
+        >
+
+          <label for="nameInput">
+            Full name
+          </label>
+
+          <input
+            type="text"
+            id="nameInput"
+            name="name"
+            placeholder="Juan Dela Cruz"
+            autocomplete="name"
+          >
+
+          <div class="error">
+            Please enter your name.
+          </div>
+
+        </div>
+
+
+
+        <div
+          class="field"
+          id="f-email"
+        >
+
+          <label for="emailInput">
+            Email
+          </label>
+
+          <input
+            type="email"
+            id="emailInput"
+            name="email"
+            placeholder="you@email.com"
+            autocomplete="email"
+          >
+
+          <div class="error">
+            Please enter a valid email.
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="row">
+
+
+        <div
+          class="field"
+          id="f-phone"
+        >
+
+          <label for="phoneInput">
+            Phone
+          </label>
+
+          <input
+            type="tel"
+            id="phoneInput"
+            name="phone"
+            placeholder="0917 123 4567"
+            autocomplete="tel"
+          >
+
+          <div class="error">
+            Please enter a valid phone number.
+          </div>
+
+        </div>
+
+
+
+        <div
+          class="field"
+          id="f-guests"
+        >
+
+          <label for="guestsInput">
+            Number of guests
+          </label>
+
+          <input
+            type="number"
+            id="guestsInput"
+            name="guests"
+            value="1"
+            min="1"
+            max="10"
+          >
+
+          <div class="error">
+            Enter a number between 1 and 10.
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="total">
+
+        <span>
+          Estimated total
+        </span>
+
+        <span id="totalAmount">
+          ₱0
+        </span>
+
+      </div>
+
+
+
+      <button
+class="btn submit-btn"
+type="submit"
+id="confirmReservationBtn"
+
+>
+
+Confirm Reservation </button>
+
+
+    </form>
+
+  </section>
+
+
+</main>
+
+
+
+<footer>
+
+  <div class="footer-inner">
+
+    <div>
+
+      <strong>
+        Social Craft Event Booking
+      </strong>
+
+      <br>
+
+      socialcrafteventbooking@event.com
+      ·
+      +63 917-123-4567
+
+    </div>
+
+
+    <div>
+
+      <a href="#">
+        Terms &amp; Conditions
+      </a>
+
+      ·
+
+      <a href="#">
+        Privacy Policy
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<div
+  id="toast"
+  role="status"
+  aria-live="polite"
+></div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

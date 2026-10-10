@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>My Booking | Social Craft</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+
+<body class="booking-page">
+
+
+<header>
+
+  <nav class="nav">
+
+    <div class="brand">
+      Social<span>Craft</span>
+    </div>
+
+
+    <div class="nav-links">
+
+      <a href="index.html#events">
+        Events
+      </a>
+
+      <a href="index.html#booking">
+        Book
+      </a>
+
+      <a href="my-booking.html">
+        My Booking
+      </a>
+
+    </div>
+
+
+    <button
+      class="btn logout-btn"
+      id="logoutBtn"
+      type="button"
+    >
+      Logout
+    </button>
+
+  </nav>
+
+</header>
+
+
+
+<main class="booking-main">
+
+  <div class="section-head">
+
+    <h1>
+      My Booking
+    </h1>
+
+    <p>
+      Here are your event reservations.
+    </p>
+
+  </div>
+
+
+  <div
+    id="myBookingsList"
+    class="my-booking-list"
+  ></div>
+
+
+  <div
+    id="noBooking"
+    class="no-booking"
+    style="display:none;"
+  >
+
+    <h2>
+      No bookings yet
+    </h2>
+
+    <p>
+      You haven't made any reservations.
+    </p>
+
+    <a
+      href="index.html#events"
+      class="btn"
+    >
+      Browse Events
+    </a>
+
+  </div>
+
+</main>
+
+
+
+<footer>
+
+  <div class="footer-inner">
+
+    <strong>
+      Social Craft Event Booking
+    </strong>
+
+  </div>
+
+</footer>
+
+
+<script src="booking.js"></script>
+
+</body>
+
+</html>

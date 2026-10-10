@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Reservations | Admin</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+
+<body class="admin-page">
+
+
+<header class="admin-header">
+
+  <div class="admin-brand">
+    Social<span>Craft</span>
+  </div>
+
+
+  <div class="admin-user">
+
+    <a
+      href="admin.html"
+      class="btn ghost"
+    >
+      Dashboard
+    </a>
+
+
+    <button
+      class="btn logout-btn"
+      id="logoutBtn"
+      type="button"
+    >
+      Logout
+    </button>
+
+  </div>
+
+</header>
+
+
+
+<main class="admin-main">
+
+
+  <div class="admin-heading">
+
+    <h1>
+      Reservation Records
+    </h1>
+
+    <p>
+      All reservations submitted by users.
+    </p>
+
+  </div>
+
+
+
+  <div
+    id="adminReservations"
+    class="admin-reservations"
+  ></div>
+
+
+  <div
+    id="noReservations"
+    class="no-bookings"
+    style="display:none;"
+  >
+
+    <h2>
+      No Reservations
+    </h2>
+
+    <p>
+      There are currently no reservations.
+    </p>
+
+  </div>
+
+
+</main>
+
+
+
+<script src="admin-reservations.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Login | Social Craft Event Booking</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+  <div class="login-container">
+
+    <div class="login-card">
+
+      <div class="login-logo">
+        Social<span>Craft</span>
+      </div>
+
+      <h1>Welcome Back</h1>
+
+      <p class="login-subtitle">
+        Sign in to continue to Social Craft Event Booking.
+      </p>
+
+      <form id="loginForm">
+
+        <div class="login-field">
+
+          <label for="loginUsername">
+            Username
+          </label>
+
+          <input
+            type="text"
+            id="loginUsername"
+            placeholder="Enter your username"
+            autocomplete="username"
+            required
+          >
+
+        </div>
+
+
+        <div class="login-field">
+
+          <label for="loginPassword">
+            Password
+          </label>
+
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Enter your password"
+            autocomplete="current-password"
+            required
+          >
+
+        </div>
+
+
+        <div
+          id="loginError"
+          class="login-error"
+        ></div>
+
+
+        <button
+          type="submit"
+          class="btn login-btn"
+        >
+          Login
+        </button>
+
+      </form>
+
+
+
+    </div>
+
+  </div>
+
+
+  <script src="login.js"></script>
+
+</body>
+
+</html>
